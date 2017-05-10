@@ -1,0 +1,86 @@
+@font-face {font-family:OpenSans;src:url("../fonts/OpenSans-Regular.ttf");}
+*{box-sizing:border-box;font-family:'OpenSans',sans-serif;}
+html,body{padding:0px;margin:0px;width:100%;height:100%;background-image:url('../imgs/images/back.png');background-position:center;background-size:cover;}
+a,a:active{text-decoration:none;color:inherit;}
+header{position:fixed;width:100%;height:60px;background-color:white;box-shadow:0px 0px 8px #666666;}
+#topo{width:1144px;height:60px;margin:0px auto;}
+#topo #logo_topo{float:left;height:36px;padding:12px;}
+#topo #logo_topo img{height:36px;}
+#topo nav{float:right;}
+#topo nav ul{margin:0px;padding:0px;}
+#topo nav ul li{display:inline-block;margin:19px;font-size:16px;}
+#topo nav ul li:hover{color:#0097C6;}
+#topo nav ul .social_topo{margin:13px;float:right;height:34px;width:34px;border:1px solid #0097C6;border-radius:50%;}
+#topo nav ul .social_topo:hover{background-color:#0097C6;}
+#topo nav ul .social_topo img{height:24px;margin:4px;}
+#home{float:left;width:100%;height:700px;background: rgba(0,152,198,0.7);
+background: -moz-linear-gradient(45deg, rgba(0,152,198,0.7) 0%, rgba(0,152,198,0.5) 100%);
+background: -webkit-gradient(left bottom, right top, color-stop(0%, rgba(0,152,198,0.7)), color-stop(100%, rgba(0,152,198,0.5)));
+background: -webkit-linear-gradient(45deg, rgba(0,152,198,0.7) 0%, rgba(0,152,198,0.5) 100%);
+background: -o-linear-gradient(45deg, rgba(0,152,198,0.7) 0%, rgba(0,152,198,0.5) 100%);
+background: -ms-linear-gradient(45deg, rgba(0,152,198,0.7) 0%, rgba(0,152,198,0.5) 100%);
+background: linear-gradient(45deg, rgba(0,152,198,0.7) 0%, rgba(0,152,198,0.5) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0098c6', endColorstr='#0098c6', GradientType=1 );}
+.content{margin:auto;width:1144px;margin-top:50px}
+#home #left_home{float:left;width:60%;height:600px;margin-top:25px;}
+#home #left_home #frase_home{display:table;width:100%;height:300px;}
+#home #left_home #frase_home #frase{display:table-cell;vertical-align:bottom;width:100%;font-size:3em;text-align:center;}
+#home #left_home #buttons_home{width:90%;height:200px;margin-left:5%;margin-top:5%;}
+#home #right_home{float:right;width:40%;}
+#home #right_home #mockup_home{display:block;height:600px;margin:0px auto;margin-top:25px;}
+#vantagens{float:left;width:100%;background-color:white;}
+.title_section{float:left;padding-right:64px;border-bottom:2px solid #0097C6;font-size:2em;line-height:2em;}
+.desc_section{float:left;width:90%;margin:5%;color:#666666;text-align:center;}
+#vantagens #carroussel{float:left;width:100%;height:500px;background-color:red;margin-bottom:5%;}
+.cont{float:left;width:100%;margin-top:5%;margin-bottom:5%;}
+#contato{float:left;width:100%;background: rgba(103,196,219,1);
+background: -moz-linear-gradient(45deg, rgba(103,196,219,1) 0%, rgba(192,230,240,1) 100%);
+background: -webkit-gradient(left bottom, right top, color-stop(0%, rgba(103,196,219,1)), color-stop(100%, rgba(192,230,240,1)));
+background: -webkit-linear-gradient(45deg, rgba(103,196,219,1) 0%, rgba(192,230,240,1) 100%);
+background: -o-linear-gradient(45deg, rgba(103,196,219,1) 0%, rgba(192,230,240,1) 100%);
+background: -ms-linear-gradient(45deg, rgba(103,196,219,1) 0%, rgba(192,230,240,1) 100%);
+background: linear-gradient(45deg, rgba(103,196,219,1) 0%, rgba(192,230,240,1) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#67c4db', endColorstr='#c0e6f0', GradientType=1 );}
+#contato #formulario{float:left;width:45%;margin-right:5%;}
+input[type=text], textarea{float:left;width:96%;border:1px solid #0097C6;padding:2%;border-radius:5px;margin-bottom:5%;}
+input[type=submit]{cursor:pointer;float:left;width:96%;border:1px solid #0097C6;padding:3% 2% 3% 2%;border-radius:5px;margin-bottom:5%;color:#0097C6;background:white;transition:background 0.5s, color 0.5s;}
+input[type=submit]:hover{background:#0097C6;color:white;}
+textarea{resize:none;height:200px;}
+input,textarea{font-size:1em;}
+input:focus,textarea:focus{outline:none;border:2px solid #0097C6;margin-left:-1px;margin-top:-1px;}
+#contato #right_contato{float:right;width:45%;padding-left:10%;border-left:1px solid #0097C6;}
+#contato #right_contato #mapa{width:100%;}
+#contato #right_contato #mapa iframe{width:100%;box-shadow:0px 0px 4px #666666;}
+#contato #right_contato #redes_sociais .person_rede{float:left;margin-bottom:10%;}
+.name_rede{float:left;padding-right:64px;border-bottom:2px solid #0097C6;line-height:2em;}
+#contato #right_contato #redes_sociais .person_rede .rede{float:left;width:95%;margin-left:5%;margin-top:5%;}
+#contato #right_contato #redes_sociais .person_rede .rede .img_rede{float:left;width:30px;height:30px;margin-right:2%;}
+#contato #right_contato #redes_sociais .person_rede .rede .img_rede img{width:30px;}
+footer{float:left;width:100%;background-color:black;color:white;}
+#rodape{margin:0px auto;width:1144px;margin-top:2%;}
+#rodape ul{float:left;width:95%;margin:0px;margin-top:3%;margin-left:3%;padding:0px;}
+#rodape ul li{list-style:none;margin:2%;color:#666666;}
+#rodape ul li a:hover{color:white;}
+#rodape #menu_user{float:left;width:33%;}
+#rodape #menu_emp{float:left;width:33%;}
+#rodape #facebook{float:left;width:33%;}
+#rodape #facebook #face{float:left;width:95%;margin-left:5%;margin-top:5%;}
+#rodape #social{float:left;clear:both;}
+#rodape #social .social_topo{margin:13px;float:left;height:34px;width:34px;border:1px solid #0097C6;border-radius:50%;}
+#rodape #social .social_topo:hover{background-color:#0097C6;}
+#rodape #social .social_topo img{height:24px;margin:4px;}
+#rodape #copyright{float:left;width:100%;text-align:center;margin-top:2%;margin-bottom:2%;}
+
+#erro_nome_form{float:left;color:red;margin-top:-5%;margin-bottom:2%;}
+#erro_email_form{float:left;color:red;margin-top:-5%;margin-bottom:2%;}
+#erro_assunto_form{float:left;color:red;margin-top:-5%;margin-bottom:2%;}
+#erro_msg_form{float:left;color:red;margin-top:-5%;margin-bottom:2%;}
+
+#person1{background:red;}
+#person1:hover{background:orange;}
+#person2{background:blue;}
+#person2:hover{background:green;}
+
+input:-webkit-autofill {
+    -webkit-box-shadow: 0 0 0px 1000px white inset;
+}
