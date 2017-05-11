@@ -7,6 +7,18 @@ jQuery("document").ready(function($){
 	});
 });
 
+$('#menu').on('click',function(){
+	$('#topo nav').css('left','0');
+	$('body').css('overflow','hidden');
+	setTimeout(function(){
+		$('body').on('click',function(){
+			$('#topo nav').css('left','-90%');
+			$('body').css('overflow','auto');
+			$('body').off('click');
+		});
+	},100);
+});
+
 $('.ft_person').height($('.ft_person').width());
 
 $('#s_in').on('mouseover',function(){
