@@ -19,6 +19,68 @@ $('#menu').on('click',function(){
 	},100);
 });
 
+var j = [true,true,true,true];
+
+$("#card1").on('click',function(){
+	if ( j[0] ){
+		$("#cont1").css({"max-height":"1000px","margin":"5%"});
+		$("#img1").css({"transform":"rotate(180deg)"});
+		j[0] = false;
+	} else {
+		$("#cont1").css({"max-height":"0px"});
+		setTimeout(function(){
+			$("#cont1").css({"margin":"0%"});
+		},500);
+		$("#img1").css({"transform":"rotate(0deg)"});
+		j[0] = true;
+	}
+});
+
+$("#card2").on('click',function(){
+	if ( j[1] ){
+		$("#cont2").css({"max-height":"1000px","margin":"5%"});
+		$("#img2").css({"transform":"rotate(180deg)"});
+		j[1] = false;
+	} else {
+		$("#cont2").css({"max-height":"0px"});
+		setTimeout(function(){
+			$("#cont2").css({"margin":"0%"});
+		},500);
+		$("#img2").css({"transform":"rotate(0deg)"});
+		j[1] = true;
+	}
+});
+
+$("#card3").on('click',function(){
+	if ( j[2] ){
+		$("#cont3").css({"max-height":"1000px","margin":"5%"});
+		$("#img3").css({"transform":"rotate(180deg)"});
+		j[2] = false;
+	} else {
+		$("#cont3").css({"max-height":"0px"});
+		setTimeout(function(){
+			$("#cont3").css({"margin":"0%"});
+		},500);
+		$("#img3").css({"transform":"rotate(0deg)"});
+		j[2] = true;
+	}
+});
+
+$("#card4").on('click',function(){
+	if ( j[3] ){
+		$("#cont4").css({"max-height":"1000px","margin":"5%"});
+		$("#img4").css({"transform":"rotate(180deg)"});
+		j[3] = false;
+	} else {
+		$("#cont4").css({"max-height":"0px"});
+		setTimeout(function(){
+			$("#cont4").css({"margin":"0%"});
+		},500);
+		$("#img4").css({"transform":"rotate(0deg)"});
+		j[3] = true;
+	}
+});
+
 $('.ft_person').height($('.ft_person').width());
 
 $('#s_in').on('mouseover',function(){

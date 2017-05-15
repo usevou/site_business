@@ -1,6 +1,8 @@
-@font-face {font-family:OpenSans;src:url("../fonts/OpenSans-Regular.ttf");}
-*{box-sizing:border-box;font-family:'OpenSans',sans-serif;}
-html,body{padding:0px;margin:0px;width:100%;height:100%;background-image:url('../imgs/images/back.png');background-position:center;background-size:cover;}
+@font-face {font-family:Lato-Light;src:url("../fonts/Lato-Light.ttf");}
+@font-face {font-family:Lato-Thin;src:url("../fonts/Lato-Thin.ttf");}
+@font-face {font-family:Lato-Medium;src:url("../fonts/Lato-Medium.ttf");}
+*{box-sizing:border-box;font-family:'Lato-Light',sans-serif;}
+html,body{padding:0px;margin:0px;width:100%;height:100%;background-image:url('../imgs/images/back.jpg');background-position:center;background-size:cover;background-attachment:fixed;}
 a,a:active{text-decoration:none;color:inherit;}
 header{position:fixed;width:100%;height:60px;background-color:white;box-shadow:0px 0px 8px #666666;}
 #topo{width:1144px;height:60px;margin:0px auto;}
@@ -24,14 +26,23 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0098c6', end
 .content{margin:auto;width:1144px;margin-top:50px}
 #home #left_home{float:left;width:60%;height:600px;margin-top:25px;}
 #home #left_home #frase_home{display:table;width:100%;height:300px;}
-#home #left_home #frase_home #frase{display:table-cell;vertical-align:bottom;width:100%;font-size:3em;text-align:center;}
-#home #left_home #buttons_home{width:90%;height:200px;margin-left:5%;margin-top:5%;}
+#home #left_home #frase_home #frase{display:table-cell;vertical-align:bottom;width:100%;font-size:3em;text-align:center;font-family:Lato-Medium;color:white;}
+#home #left_home #buttons_home{width:90%;height:200px;margin-left:5%;margin-top:5%;color:white;text-align:center;}
 #home #right_home{float:right;width:40%;}
 #home #right_home #mockup_home{display:block;height:600px;margin:0px auto;margin-top:25px;}
 #vantagens{float:left;width:100%;background-color:white;}
-.title_section{float:left;padding-right:64px;border-bottom:2px solid #0097C6;font-size:2em;line-height:2em;}
+.title_section{float:left;padding-right:64px;border-bottom:2px solid #0097C6;font-size:2em;line-height:2em;font-family:Lato-Medium;}
 .desc_section{float:left;width:90%;margin:5%;color:#666666;text-align:center;}
-#vantagens #carroussel{float:left;width:100%;height:500px;background-color:red;margin-bottom:5%;}
+#vantagens #carroussel{float:left;width:100%;margin-bottom:5%;}
+#vantagens #carroussel .card{float:left;width:48.75%;margin-left:2.5%;margin-bottom:2.5%;box-shadow:0px 1px 8px #666666;border-radius:5px;cursor:pointer;}
+#vantagens #carroussel .card:first-child{margin-left:0%;}
+#vantagens #carroussel .card .header_card{display:table;width:90%;margin:5%;}
+#vantagens #carroussel .card .header_card .img_card{display:table-cell;vertical-align:middle;width:15%;}
+#vantagens #carroussel .card .header_card .img_card img{width:100%;}
+#vantagens #carroussel .card .header_card .title_card{display:table-cell;vertical-align:middle;width:75%;padding-left:5%;font-family:Lato-Medium;}
+#vantagens #carroussel .card .header_card .img_show_card{display:table-cell;vertical-align:middle;width:10%;}
+#vantagens #carroussel .card .header_card .img_show_card img{width:100%;transition:transform 0.5s;}
+#vantagens #carroussel .card .cont_card{max-height:0px;width:90%;transition:max-height 0.5s;overflow:hidden;font-family:Lato-Thin;}
 .cont{float:left;width:100%;margin-top:5%;margin-bottom:5%;}
 #contato{float:left;width:100%;background: rgba(103,196,219,1);
 background: -moz-linear-gradient(45deg, rgba(103,196,219,1) 0%, rgba(192,230,240,1) 100%);
@@ -52,7 +63,7 @@ input:focus,textarea:focus{outline:none;border:2px solid #0097C6;margin-left:-1p
 #contato #right_contato #mapa{width:100%;}
 #contato #right_contato #mapa iframe{width:100%;box-shadow:0px 0px 4px #666666;}
 #contato #right_contato #redes_sociais .person_rede{float:left;margin-bottom:10%;}
-.name_rede{float:left;padding-right:64px;border-bottom:2px solid #0097C6;line-height:2em;}
+.name_rede{float:left;padding-right:64px;border-bottom:2px solid #0097C6;line-height:2em;font-family:Lato-Medium;}
 #contato #right_contato #redes_sociais .person_rede .rede{float:left;width:95%;margin-left:5%;margin-top:5%;}
 #contato #right_contato #redes_sociais .person_rede .rede .img_rede{float:left;width:30px;height:30px;margin-right:2%;}
 #contato #right_contato #redes_sociais .person_rede .rede .img_rede img{width:30px;}
@@ -76,10 +87,7 @@ footer{float:left;width:100%;background-color:black;color:white;}
 #erro_assunto_form{float:left;color:red;margin-top:-5%;margin-bottom:2%;}
 #erro_msg_form{float:left;color:red;margin-top:-5%;margin-bottom:2%;}
 
-#person1{background:red;}
-#person1:hover{background:orange;}
-#person2{background:blue;}
-#person2:hover{background:green;}
+#menu{display:none;}
 
 input:-webkit-autofill {
     -webkit-box-shadow: 0 0 0px 1000px white inset;
@@ -108,13 +116,11 @@ input:-webkit-autofill {
 
   #topo nav{position:fixed;width:85%;height:100%;background-color:white;box-shadow:4px 0px 8px #666666;left:-90%;}
   #topo nav ul{margin:0px;padding:0px;}
-  #topo nav ul li{display:block;margin:19px;font-size:16px;}
-  #topo nav #emp li{display:block;margin:3px;font-size:16px;padding:8px 16px 8px 16px;background-color:#652C90;border-radius:5px;color:white;}
+  #topo nav ul li{display:block;}
+  #topo nav #emp li{display:block;}
   #topo nav ul li:hover{color:#652C90;}
   #topo nav #emp li:hover{color:white;}
-  #topo nav ul .social_topo{margin:13px;float:right;height:34px;width:34px;border:1px solid #652C90;border-radius:50%;}
-  #topo nav ul .social_topo:hover{background-color:#652C90;}
-  #topo nav ul .social_topo img{height:24px;margin:4px;}
+  #vantagens #carroussel .card{width:100%;margin-left:0%;}
 }
 
 @media screen and (max-width: 716px) {
