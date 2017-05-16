@@ -7,6 +7,14 @@ jQuery("document").ready(function($){
 	});
 });
 
+$(window).scroll(function () {
+ if ( $(this).scrollTop() > 0 )  {
+   $('#top').css('opacity','0.5');
+ } else {
+   $('#top').css('opacity','0');
+ }
+});
+
 $('#menu').on('click',function(){
 	$('#topo nav').css('left','0');
 	$('body').css('overflow','hidden');
@@ -34,6 +42,34 @@ $("#card1").on('click',function(){
 		$("#img1").css({"transform":"rotate(0deg)"});
 		j[0] = true;
 	}
+});
+
+$("#card1").on('mouseover',function(){
+	$("#i1").attr('src','imgs/sets/more_client_c.png');
+});
+$("#card1").on('mouseout',function(){
+	$("#i1").attr('src','imgs/sets/more_client.png');
+});
+
+$("#card2").on('mouseover',function(){
+	$("#i2").attr('src','imgs/sets/fidelity_c.png');
+});
+$("#card2").on('mouseout',function(){
+	$("#i2").attr('src','imgs/sets/fidelity.png');
+});
+
+$("#card3").on('mouseover',function(){
+	$("#i3").attr('src','imgs/sets/market_c.png');
+});
+$("#card3").on('mouseout',function(){
+	$("#i3").attr('src','imgs/sets/market.png');
+});
+
+$("#card4").on('mouseover',function(){
+	$("#i4").attr('src','imgs/sets/more_c.png');
+});
+$("#card4").on('mouseout',function(){
+	$("#i4").attr('src','imgs/sets/more.png');
 });
 
 $("#card2").on('click',function(){
